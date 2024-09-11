@@ -60,8 +60,4 @@ AddtoCart.forEach((button) => {
     // Assuming cartNumber and number are defined elsewhere to show total items
     cartNumber.textContent = number;
   });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> e71fe322ac5d3c92a8f45a77c48431b901800de7
