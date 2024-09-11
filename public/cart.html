@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
 </head>
-
 <body>
-  <header class="bg-white shadow-md w-full px-6 py-4">
-    <nav class="flex justify-between lg:mx-[100px] md:mx-[20px] relative lg:items-center">
-      <h1 class="text-2xl text-blue-950 font-bold uppercase">Voltex Store</h1>
-      <ul class="hidden justify-center space-y-6 lg:space-y-0 items-center lg:flex gap-16">
-        <li
-          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
-          <a href="index.html">Home</a>
-        </li>
-        <li
-          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
-          <a href="">Products</a>
-        </li>
-        <li
-          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
-          <a href="">Sign Up</a>
-        </li>
-        <li
-          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
-          <a href="">Contact</a>
-        </li>
-        <li
-          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
-          <a href="cart.html">
-            <box-icon type='solid' name='cart-alt'></box-icon>
-          </a>
-        </li>
+    <header class="bg-white shadow-md w-full px-6 py-4">
+        <nav class="flex justify-between lg:mx-[100px] md:mx-[20px] relative lg:items-center">
+          <h1 class="text-2xl text-blue-950 font-bold uppercase">Voltex Store</h1>
+          <ul class="hidden justify-center space-y-6 lg:space-y-0 items-center lg:flex gap-16">
+            <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="index.html">Home</a></li>
+            <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="products.html">Products</a></li>
+            <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="">Sign Up</a></li>
+            <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="">Contact</a></li>
+            <li class="lg:text-sm font-medium lg:hover:text-blue-950 lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
+              <a href="cart.html">
+                <p class="cart-number">0</p>
+                <box-icon type='solid' name='cart-alt'></box-icon>
+              </a>
+          </li>
+  
+          </ul>
+          <div class="lg:hidden flex justify-center">
+            <box-icon id="menu" name='menu' color="#172554" size="35px"></box-icon>
+          </div>
+        </nav>
+  
+    </header>
 
-      </ul>
-      <div class="lg:hidden flex justify-center">
-        <box-icon id="menu" name='menu' color="#172554" size="35px"></box-icon>
-      </div>
-    </nav>
-
-  </header>
-
-  <section class="py-[50px]  px-6">
-    <div class="lg:mx-[100px]  md:mx-[20px]">
-      <div class="cart w-[100%] space-y-4">
-        <div class="cart_header  bg-slate-300 items-center rounded flex lg:text-sm text-[12px] justify-between p-1">
-          <p class="cart_header_ID">Quantity</p>
-          <p class="cart_header_title">Product Title</p>
-          <p class="cart_header_image">Product image</p>
-          <p class="cart_header_price">Price</p>
-          <p class="cart_header_delete">Delete</p>
-        </div>
-        <div class="cart-items">
-          <!-- <div class="cart-item mt-8 bg-slate-300 items-center rounded lg:flex justify-between p-1">
+    <section class="py-[50px]  px-6">
+        <div class="lg:mx-[100px]  md:mx-[20px]">
+            <div class="cart w-[100%] space-y-4">
+                <div class="cart_header  bg-slate-300 items-center rounded flex lg:text-sm text-[12px] justify-between p-1">
+                    <p class="cart_header_ID">Product ID</p>
+                    <p class="cart_header_title">Product Title</p>
+                    <p class="cart_header_image">Product image</p>
+                    <p class="cart_header_price">Price</p>
+                    <p class="cart_header_delete">Delete</p>
+                </div>
+                <div class="cart-items">
+                    <!-- <div class="cart-item mt-8 bg-slate-300 items-center rounded lg:flex justify-between p-1">
                         <span class="cart_Id lg:text-sm text-[12px] lg:w-auto w-[19%]">ID</span>
                         <span class="cart_title lg:text-sm text-[12px] lg:w-auto w-[25%]">Bolted gland Steel plug Valve</span>
                         <img src="img/Bolted Gland Steel plug Valve-Photoroom.png" alt="" class="cart_img lg:w-[7%] w-[15%]">
                         <div class="cart_price lg:text-sm text-[12px]">$9,170</div>
                         <p class="cart_delete lg:text-sm text-[12px]">Delete</p>
                     </div> -->
+                </div>
+                <div class="cart_total mt-8 text-right">
+                    <p class="cart_total_p">Total: $10,000</p>
+                </div>
+            </div>
         </div>
-        <div class="cart_total mt-8 text-right">
-          <p class="cart_total_p">Total: $0</p>
+    </section> 
+      
+
+
+
+
+    <footer class="pt-[50px] mb-[0%] pb-2 px-6 bg-blue-950">
+        <div class="lg:text-center space-y-6 text-white">
+            <H2 class="lg:text-6xl text-3xl font-semibold">Voltex Store</H2>
+            <p>Your Trusted Source for Quality cutting-edge Technologies</p>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="">
+          
+          <ul class="lg:flex justify-center items-center my-[50px] gap-12 lg:text-xl font-semibold text-lg text-white">
+            <h3 class="lg:hidden underline pb-4">Quick links</h3>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="lg:flex justify-center items-center gap-12">
+          <h3 class="lg:hidden underline pb-4 text-white">Socials</h3>
+          <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='instagram-alt' color="white" size="30px"></box-icon>Instagram</p>
+          <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='facebook-square' color="white" size="30px"></box-icon>Facebook</p>
+          <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='whatsapp' color="white" size="30px"></box-icon>Whatsapp</p>
+          <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='twitter' color="white" size="30px"></box-icon>Twitter</p>
+          <p class="flex items-center pb-2 text-white"><box-icon type='solid' name='envelope' color="white" size="30px"></box-icon>info@voltexstore.com</p>
+        </div>
+        <hr class="mt-[50px]">
+        <p class="text-white text-center p-2">Copyright @ 2024 Voltex Store </p>
+    </footer>
 
-
-
-
-
-  <footer class="pt-[50px] mb-[0%] pb-2 px-6 bg-blue-950">
-    <div class="lg:text-center space-y-6 text-white">
-      <H2 class="lg:text-6xl text-3xl font-semibold">Voltex Store</H2>
-      <p>Your Trusted Source for Quality cutting-edge Technologies</p>
-    </div>
-    <div class="">
-
-      <ul class="lg:flex justify-center items-center my-[50px] gap-12 lg:text-xl font-semibold text-lg text-white">
-        <h3 class="lg:hidden underline pb-4">Quick links</h3>
-        <li><a href="">Home</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-    <div class="lg:flex justify-center items-center gap-12">
-      <h3 class="lg:hidden underline pb-4 text-white">Socials</h3>
-      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='instagram-alt' color="white"
-          size="30px"></box-icon>Instagram</p>
-      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='facebook-square' color="white"
-          size="30px"></box-icon>Facebook</p>
-      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='whatsapp' color="white"
-          size="30px"></box-icon>Whatsapp</p>
-      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='twitter' color="white"
-          size="30px"></box-icon>Twitter</p>
-      <p class="flex items-center pb-2 text-white"><box-icon type='solid' name='envelope' color="white"
-          size="30px"></box-icon>info@voltexstore.com</p>
-    </div>
-    <hr class="mt-[50px]">
-    <p class="text-white text-center p-2">Copyright @ 2024 Voltex Store </p>
-  </footer>
-
-  <script src="cart.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script src="style.js"></script>
+      <script src="cart.js"></script>
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <script src="style.js"></script>
 </body>
-
 </html>
