@@ -66,8 +66,4 @@ deleteCartHeader.addEventListener("click", () => {
 });
 
 // Display items on page load
-<<<<<<< HEAD
 displayCartItems();
-=======
-displayCartItems();
->>>>>>> e71fe322ac5d3c92a8f45a77c48431b901800de7
