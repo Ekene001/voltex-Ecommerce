@@ -1,84 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+
 <body class="font-Rubik">
-    <header class="bg-white shadow-md w-full px-6 py-4">
-      <nav class="flex justify-between lg:mx-[100px] md:mx-[20px] relative lg:items-center">
-        <h1 class="text-2xl text-blue-950 font-bold uppercase">Voltex Store</h1>
-        <ul class="hidden justify-center space-y-6 lg:space-y-0 items-center lg:flex gap-16">
-          <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="/index.html">Home</a></li>
-          <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="">Products</a></li>
-          <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="">Sign Up</a></li>
-          <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="">Contact</a></li>
-          <li class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block"><a href="/cart.html">
+  <header class="bg-white shadow-md w-full px-6 py-4">
+    <nav class="flex justify-between lg:mx-[100px] md:mx-[20px] relative lg:items-center">
+      <h1 class="text-2xl text-blue-950 font-bold uppercase">Voltex Store</h1>
+      <ul class="hidden justify-center space-y-6 lg:space-y-0 items-center lg:flex gap-16">
+        <li
+          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
+          <a href="">Products</a>
+        </li>
+        <li
+          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
+          <a href="">Sign Up</a>
+        </li>
+        <li
+          class="lg:text-sm font-medium lg:hover:text-blue-950  lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
+          <a href="">Contact</a>
+        </li>
+        <li
+          class="lg:text-sm font-medium lg:hover:text-blue-950 lg:hover:bg-white hover:bg-blue-950 hover:text-white block">
+          <a href="cart.html">
+            <p class="cart-number">0</p>
             <box-icon type='solid' name='cart-alt'></box-icon>
-          </a></li>
+          </a>
+        </li>
 
-        </ul>
-        <div class="lg:hidden relative">
-          <box-icon id="menu" name='menu' color="#172554" size="35px"></box-icon>
-          <small></small>
+      </ul>
+      <div class="lg:hidden relative">
+        <box-icon id="menu" name='menu' color="#172554" size="35px"></box-icon>
+        <small></small>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="px-6 py-10 flex items-center"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 0, 48, 0.7)),url('img/168.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 80vh;">
+    <div class="lg:mx-[100px] md:mx-[20px] lg:w-[70%]">
+      <div class="lg:space-y-6 space-y-4 text-white">
+        <h4 class="lg:text-xl text-sm font-light uppercase">Welcome to voltex store</h4>
+        <h1 class="lg:text-6xl text-3xl font-semibold capitalize">Your Trusted Source for Quality cutting-edge
+          Technologies</h1>
+        <div>
+          <a href="#" class="bg-white text-blue-950 p-1 rounded-sm lg:text-xl lg:p-2">Shop Now</a>
         </div>
-      </nav>
+      </div>
+    </div>
 
-    </header>
+  </div>
 
-    <div class="px-6 py-10 flex items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 0, 48, 0.7)),url('img/168.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 80vh;">
-      <div class="lg:mx-[100px] md:mx-[20px] lg:w-[70%]">
-        <div class="lg:space-y-6 space-y-4 text-white">
-          <h4 class="lg:text-xl text-sm font-light uppercase">Welcome to voltex store</h4>
-          <h1 class="lg:text-6xl text-3xl font-semibold capitalize">Your Trusted Source for Quality cutting-edge Technologies</h1>
-          <div>
-            <a href="#" class="bg-white text-blue-950 p-1 rounded-sm lg:text-xl lg:p-2">Shop Now</a>
-          </div>
+  <!-- categories section -->
+
+  <section class="py-[50px] px-6">
+    <h2 class="lg:text-4xl text-2xl font-semibold text-center">Top Categories</h2>
+    <div class="grid lg:mx-[100px] md:mx-[20px] py-[50px] lg:grid-cols-3 justify-center place-items-center gap-6">
+      <div class="space-y-4 border-b-2 border-gray-400">
+        <img src="img/industrial-motor-pump-factory_1028938-194021.jpg"
+          class="shadow-gray-300 object-cover shadow-md rounded-md lg:h-[250px] w-full" alt="">
+        <div class="flex items-center justify-between">
+          <box-icon name='link-external' class="order-2"></box-icon>
+          <h1 class="text-center order-1 text-black">Pumps</h1>
+        </div>
+      </div>
+      <div class="space-y-4 border-b-2 border-gray-400">
+        <img src="img/istockphoto-1427303583-1024x1024-transformed.jpeg"
+          class="object-cover shadow-gray-300 shadow-md rounded-md lg:h-[250px] min-w-full" alt="">
+        <div class="flex items-center justify-between">
+          <box-icon name='link-external' class="order-2"></box-icon>
+          <h1 class="text-center order-1 text-black">seals</h1>
+        </div>
+      </div>
+      <div class="space-y-4 border-b-2 border-gray-400">
+        <img src="img/steel-pipes-with-orange-valves-low-angle_23-2149364330.jpg"
+          class="object-cover shadow-gray-300 shadow-md rounded-md lg:h-[250px] w-full" alt="">
+        <div class="flex items-center justify-between">
+          <box-icon name='link-external' class="order-2"></box-icon>
+          <h1 class="text-center order-1 text-black">Valves</h1>
         </div>
       </div>
 
     </div>
 
-    <!-- categories section -->
-
-    <section class="py-[50px] px-6">
-      <h2 class="lg:text-4xl text-2xl font-semibold text-center">Top Categories</h2>
-      <div class="grid lg:mx-[100px] md:mx-[20px] py-[50px] lg:grid-cols-3 justify-center place-items-center gap-6">
-        <div class="space-y-4 border-b-2 border-gray-400">
-          <img src="img/industrial-motor-pump-factory_1028938-194021.jpg" class="shadow-gray-300 object-cover shadow-md rounded-md lg:h-[250px] w-full" alt="">
-          <div class="flex items-center justify-between">
-            <box-icon name='link-external' class="order-2"></box-icon>
-            <h1 class="text-center order-1 text-black">Pumps</h1>
-          </div>
-        </div>
-        <div class="space-y-4 border-b-2 border-gray-400">
-          <img src="img/istockphoto-1427303583-1024x1024-transformed.jpeg" class="object-cover shadow-gray-300 shadow-md rounded-md lg:h-[250px] min-w-full" alt="">
-          <div class="flex items-center justify-between">
-            <box-icon name='link-external' class="order-2"></box-icon>
-            <h1 class="text-center order-1 text-black">seals</h1>
-          </div>
-        </div>
-        <div class="space-y-4 border-b-2 border-gray-400">
-          <img src="img/steel-pipes-with-orange-valves-low-angle_23-2149364330.jpg" class="object-cover shadow-gray-300 shadow-md rounded-md lg:h-[250px] w-full" alt="">
-          <div class="flex items-center justify-between">
-            <box-icon name='link-external' class="order-2"></box-icon>
-            <h1 class="text-center order-1 text-black">Valves</h1>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
+  </section>
 
   <!-- banner -->
 
-  <section class="flex items-center px-6" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 0, 48, 0.7)),url('img/2149057695.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 70vh;">
+  <section class="flex items-center px-6"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 0, 48, 0.7)),url('img/2149057695.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 70vh;">
     <div class=" lg:mx-[100px] md:mx-[20px] space-y-5 lg:w-[50%]">
-       <h1 class="lg:text-4xl text-2xl text-white font-semibold">Go boldly with Voltex</h1>
+      <h1 class="lg:text-4xl text-2xl text-white font-semibold">Go boldly with Voltex</h1>
       <p class="text-white">
-        At Voltex store, our culture fosters inclusion and empowerment, spearheading a pioneering approach through a distinctive software portfolio. We not only offer cutting-edge industrial equipment but also empower customers to delve into innovative automation technologies.
+        At Voltex store, our culture fosters inclusion and empowerment, spearheading a pioneering approach through a
+        distinctive software portfolio. We not only offer cutting-edge industrial equipment but also empower customers
+        to delve into innovative automation technologies.
       </p>
       <div>
         <a href="#" class="bg-white text-blue-950 p-1 rounded-sm lg:text-xl lg:p-2">Learn More</a>
@@ -89,324 +115,334 @@
 
   <!-- products section -->
 
-    <section class="py-[50px]  px-6">
-      <div class="flex justify-between lg:mx-[100px] md:mx-[20px] items-center">
-        <h2 class="lg:text-4xl text-2xl text-black font-semibold">Latest Technologies</h2>
-        <div class="flex items-center">
-          <h2 class="lg:text-2xl text-sm">View All</h2>
-          <box-icon name='right-arrow-alt'></box-icon>
+  <section class="py-[50px]  px-6">
+    <div class="flex justify-between lg:mx-[100px] md:mx-[20px] items-center">
+      <h2 class="lg:text-4xl text-2xl text-black font-semibold">Latest Technologies</h2>
+      <div class="flex items-center">
+        <h2 class="lg:text-2xl text-sm">View All</h2>
+        <box-icon name='right-arrow-alt'></box-icon>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 md:mx-[20px] lg:mx-[100px] gap-4 py-[50px]">
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Clean Flow Linear Valve-Photoroom.png" class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
+        </div>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Clean Flow Linear Valve</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$4190</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
+            </div>
+            <p id="card_ratingNumber" class="font-light">(88)</p>
+          </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="1" data-title="Clean Flow Linear Valve" data-image="img/Clean Flow Linear Valve-Photoroom.png"
+            data-price="$4190">Add to Cart</button>
         </div>
       </div>
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 md:mx-[20px] lg:mx-[100px] gap-4 py-[50px]">
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Clean Flow Linear Valve-Photoroom.png" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Clean Flow Linear Valve</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$4190</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
-            </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="1"
-            data-title="Clean Flow Linear Valve" 
-            data-image="img/Clean Flow Linear Valve-Photoroom.png"
-            data-price="$4190"
-            >Add to Cart</button>
-          </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/API Process Pumps - HWX-VOI-APPHWX-1161682324.webp"
+            class="py-2 h-64 bg-gray-100 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/API Process Pumps - HWX-VOI-APPHWX-1161682324.webp" class="py-2 h-64 bg-gray-100 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Axial Piston Process Pump</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$2150</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Axial Piston Process Pump</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$2150</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
             </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="2"
-            data-title="Axial Piston Process Pump" 
-            data-image="img/API Process Pumps - HWX-VOI-APPHWX-1161682324.webp"
-            data-price="$2150"
-            >Add to Cart</button>
+            <p id="card_ratingNumber" class="font-light">(88)</p>
           </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="2" data-title="Axial Piston Process Pump"
+            data-image="img/API Process Pumps - HWX-VOI-APPHWX-1161682324.webp" data-price="$2150">Add to Cart</button>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Compressor Seals and Systems - Ampliflow T-Boost-VOI-CSSATB-319191202.webp" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Ampliflow Compressor Seal</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$1080</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
+      </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Compressor Seals and Systems - Ampliflow T-Boost-VOI-CSSATB-319191202.webp"
+            class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
+        </div>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Ampliflow Compressor Seal</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$1080</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
             </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="4"
-            data-title="Ampliflow Compressor Seal" 
+            <p id="card_ratingNumber" class="font-light">(88)</p>
+          </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="4" data-title="Ampliflow Compressor Seal"
             data-image="img/Compressor Seals and Systems - Ampliflow T-Boost-VOI-CSSATB-319191202.webp"
-            data-price="$1080"
-            >Add to Cart</button>
-          </div>
+            data-price="$1080">Add to Cart</button>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Polyolefin-Reactor-Pump-VOI-PRP-161816.webp" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Polyolefin Reactor Pump</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$990</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
-            </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="5"
-            data-title="Polyolefin Reactor Pump" 
-            data-image="img/Polyolefin-Reactor-Pump-VOI-PRP-161816.webp"
-            data-price="$990"
-            >Add to Cart</button>
-          </div>
+      </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Polyolefin-Reactor-Pump-VOI-PRP-161816.webp" class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Compressor Seals and Systems - Circpac - VOI-CSSC-319193.webp" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Circpac Compressor<br> Seal</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$2000</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Polyolefin Reactor Pump</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$990</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
             </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="5"
-            data-title="Circpac Compressor Seal" 
-            data-image="img/Compressor Seals and Systems - Circpac - VOI-CSSC-319193.webp"
-            data-price="$2000"
-            >Add to Cart</button>
+            <p id="card_ratingNumber" class="font-light">(88)</p>
           </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="5" data-title="Polyolefin Reactor Pump"
+            data-image="img/Polyolefin-Reactor-Pump-VOI-PRP-161816.webp" data-price="$990">Add to Cart</button>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Horizontal - Multistage - Double Case - WXBWXBB-VOI-HMDCWXBWXBB-8134323242232422.webp" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Multistage Double case<br> Pump</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$3499</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
+      </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Compressor Seals and Systems - Circpac - VOI-CSSC-319193.webp"
+            class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
+        </div>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Circpac Compressor<br> Seal</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$2000</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
             </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="7"
-            data-title="Multistage Double case Pump" 
+            <p id="card_ratingNumber" class="font-light">(88)</p>
+          </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="5" data-title="Circpac Compressor Seal"
+            data-image="img/Compressor Seals and Systems - Circpac - VOI-CSSC-319193.webp" data-price="$2000">Add to
+            Cart</button>
+        </div>
+      </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Horizontal - Multistage - Double Case - WXBWXBB-VOI-HMDCWXBWXBB-8134323242232422.webp"
+            class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
+        </div>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Multistage Double case<br> Pump</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$3499</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
+            </div>
+            <p id="card_ratingNumber" class="font-light">(88)</p>
+          </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="7" data-title="Multistage Double case Pump"
             data-image="img/Horizontal - Multistage - Double Case - WXBWXBB-VOI-HMDCWXBWXBB-8134323242232422.webp"
-            data-price="$3499"
-            >Add to Cart</button>
-          </div>
+            data-price="$3499">Add to Cart</button>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Bolted Gland-Iron Plug Valve-Photoroom.png" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Bolted Gland Iron<br> Plug Valve</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$4190</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
-            </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="7"
-            data-title="Bolted Gland Iron Plug Valve" 
-            data-image="img/Bolted Gland-Iron Plug Valve-Photoroom.png"
-            data-price="$4190"
-            >Add to Cart</button>
-          </div>
+      </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Bolted Gland-Iron Plug Valve-Photoroom.png" class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
         </div>
-        <div id="card" class=" rounded-sm py-3 space-y-4">
-          <div id="card_top" class="relative bg-gray-100">
-            <img src="img/Gas Barrier and Containment Seals - GTSP-VOI-GBCSGTSP-723197201916.webp" class="py-2 h-64 w-full object-contain" alt="">
-            <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
-          </div>
-          <div id="card_body" class="px-1 space-y-3">
-            <h3 id="card_title" class="text-lg font-medium">Gas barrier <br> Seal</h3>
-            <p id="card_price" class="text-blue-950 text-lg">$4190</p>
-            <div id="ratings" class="flex gap-4">
-              <div id="stars">
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
-                <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
-              </div>
-              <p id="card_ratingNumber" class="font-light">(88)</p>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Bolted Gland Iron<br> Plug Valve</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$4190</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
             </div>
-            <button class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
-            data-id="8"
-            data-title="Gas barrier Seal" 
+            <p id="card_ratingNumber" class="font-light">(88)</p>
+          </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="7" data-title="Bolted Gland Iron Plug Valve"
+            data-image="img/Bolted Gland-Iron Plug Valve-Photoroom.png" data-price="$4190">Add to Cart</button>
+        </div>
+      </div>
+      <div id="card" class=" rounded-sm py-3 space-y-4">
+        <div id="card_top" class="relative bg-gray-100">
+          <img src="img/Gas Barrier and Containment Seals - GTSP-VOI-GBCSGTSP-723197201916.webp"
+            class="py-2 h-64 w-full object-contain" alt="">
+          <div id="card_tag" class="absolute top-2 left-2 bg-red-500 px-2 py-1 text-white text-sm rounded-sm">-40%</div>
+        </div>
+        <div id="card_body" class="px-1 space-y-3">
+          <h3 id="card_title" class="text-lg font-medium">Gas barrier <br> Seal</h3>
+          <p id="card_price" class="text-blue-950 text-lg">$4190</p>
+          <div id="ratings" class="flex gap-4">
+            <div id="stars">
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star' color="#fdd541" size="20px"></box-icon>
+              <box-icon type='solid' name='star-half' color="#fdd541" size="20px"></box-icon>
+            </div>
+            <p id="card_ratingNumber" class="font-light">(88)</p>
+          </div>
+          <button
+            class="add_to_cart px-4 py-2 rounded-sm bg-blue-950 text-white cursor-pointer border-none outline-none mt-8"
+            data-id="8" data-title="Gas barrier Seal"
             data-image="img/Gas Barrier and Containment Seals - GTSP-VOI-GBCSGTSP-723197201916.webp"
-            data-price="$4190"
-            >Add to Cart</button>
-          </div>
+            data-price="$4190">Add to Cart</button>
         </div>
       </div>
-      <div class="flex justify-center">
-        <a href="" class="bg-blue-950 px-4 py-2 rounded-sm text-white flex items-center">View All Products
-          <box-icon name='right-arrow-alt' color="#fff"></box-icon>
+    </div>
+    <div class="flex justify-center">
+      <a href="" class="bg-blue-950 px-4 py-2 rounded-sm text-white flex items-center">View All Products
+        <box-icon name='right-arrow-alt' color="#fff"></box-icon>
 
-        </a>
+      </a>
+    </div>
+  </section>
+
+  <!-- secured -->
+
+  <section class="py-[50px] bg-gray-100 px-6">
+    <h2 class="lg:text-4xl text-2xl text-black font-semibold text-center">What We Promise</h2>
+    <div class="grid lg:grid-cols-3 lg:mx-[100px] md:mx-[20px] gap-6 py-[50px]">
+      <div class="bg-white shadow-md text-center space-y-4 p-8">
+        <box-icon name='credit-card' size="30px" color=""
+          style="background-color: rgb(224, 224, 224); border-radius: 50%; padding: 10px 10px;"></box-icon>
+        <h3 class="lg:text-xl text-lg font-medium">Secured Payment</h3>
+        <p>Shop with confidence—your transactions are protected with the latest security technology.</p>
       </div>
-    </section>
-
-    <!-- secured -->
-
-    <section class="py-[50px] bg-gray-100 px-6">
-      <h2 class="lg:text-4xl text-2xl text-black font-semibold text-center">What We Promise</h2>
-      <div class="grid lg:grid-cols-3 lg:mx-[100px] md:mx-[20px] gap-6 py-[50px]">
-        <div class="bg-white shadow-md text-center space-y-4 p-8">
-          <box-icon name='credit-card' size="30px" color="" style="background-color: rgb(224, 224, 224); border-radius: 50%; padding: 10px 10px;"></box-icon>
-          <h3 class="lg:text-xl text-lg font-medium">Secured Payment</h3>
-          <p>Shop with confidence—your transactions are protected with the latest security technology.</p>
-        </div>
-        <div class="bg-white shadow-md text-center space-y-4 p-8">
-          <box-icon name='truck' type="solid" size="30px" color="" style="background-color: rgb(224, 224, 224); border-radius: 50%; padding: 10px 10px;"></box-icon>
-          <h3 class="lg:text-xl text-lg font-medium">Fast Shipping</h3>
-          <p>Get your order quickly with our speedy delivery service.</p>
-        </div>
-        <div class="bg-white shadow-md text-center space-y-4 p-8">
-          <box-icon name='chat' type="solid" size="30px" color="" style="background-color: rgb(224, 224, 224); border-radius: 50%; padding: 10px 10px;"></box-icon>
-          <h3 class="lg:text-xl text-lg font-medium">24/7 Support System</h3>
-          <p>Our dedicated team is available to assist you with anything you need.</p>
-        </div>
+      <div class="bg-white shadow-md text-center space-y-4 p-8">
+        <box-icon name='truck' type="solid" size="30px" color=""
+          style="background-color: rgb(224, 224, 224); border-radius: 50%; padding: 10px 10px;"></box-icon>
+        <h3 class="lg:text-xl text-lg font-medium">Fast Shipping</h3>
+        <p>Get your order quickly with our speedy delivery service.</p>
       </div>
-    </section>
-
-    <!-- Banner 2 -->
-     
-    <section class="py-[50px]  px-6">
-      <div class="lg:flex items-center space-y-8 relative lg:space-y-0 md:mx-[20px] lg:mx-[100px]">
-        <div class="">
-          <img src="img/shutterstock_227066578_PPT.webp" class="lg:h-[400px] lg:w-[600px] h-[300px] w-full object-cover" alt="">
-        </div>
-        <div class="flex-1 space-y-8 bg-white relative lg:top-[140px] lg:shadow-md lg:p-10 p-6 lg:ml-[-130px]">
-          <h2 class="lg:text-4xl text-2xl font-semibold">Cutting-Edge Industrial Equipment</h2>
-          <p>Voltex store offers a wide range of cutting-edge industrial equipment, tailored to meet the diverse needs of our customers. Our products are designed with the latest technology to ensure efficiency, reliability, and performance. Whether you need equipment for manufacturing, automation, or any other industrial application, we have the right solutions for you.</p>
-          <div>
-            <a href="#" class="bg-blue-950 text-white p-1 rounded-sm lg:text-xl lg:p-2">Learn More</a>
-          </div>
-
-        </div>
+      <div class="bg-white shadow-md text-center space-y-4 p-8">
+        <box-icon name='chat' type="solid" size="30px" color=""
+          style="background-color: rgb(224, 224, 224); border-radius: 50%; padding: 10px 10px;"></box-icon>
+        <h3 class="lg:text-xl text-lg font-medium">24/7 Support System</h3>
+        <p>Our dedicated team is available to assist you with anything you need.</p>
       </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- Banner 2 -->
 
-    <!-- Mission -->
-
-    <section class="lg:mt-[130px] py-[50px] px-6 bg-gray-100 lg:h-[660px] h-[900px]">
-      <div class="lg:flex items-center space-y-8 relative lg:space-y-0 md:mx-[20px] lg:mx-[100px]">
-        <div class="flex-1 space-y-8 bg-gray-800 text-white lg:p-10 p-6 lg:shadow-md z-10">
-          <h2 class="lg:text-4xl text-2xl font-semibold">Our Mission</h2>
-          <p>We aim to be at the forefront of industrial technology, providing our customers with cutting-edge industrial equipment and empowering them to explore and implement innovative automation technologies. Our commitment to excellence and innovation drives everything we do, ensuring that we deliver the highest quality products and services to our clients.</p>
-          
-          <div>
-            <a href="#" class="bg-white text-blue-950 p-1 rounded-sm lg:text-xl lg:p-2">Learn More</a>
-          </div>
-
-        </div>
-        <div class="relative lg:top-[130px] lg:ml-[-110px]">
-          <img src="img/landing-brand-med.webp" class="lg:h-[400px] h-[300px] lg:w-[600px] w-full object-cover" alt="">
-        </div>
-        
-      </div>
-    </section>
-
-    <footer class="pt-[50px] mb-0 pb-2 px-6 bg-blue-950">
-      <div class="lg:text-center space-y-6 text-white">
-          <H2 class="lg:text-6xl text-3xl font-semibold">Voltex Store</H2>
-          <p>Your Trusted Source for Quality cutting-edge Technologies</p>
-      </div>
+  <section class="py-[50px]  px-6">
+    <div class="lg:flex items-center space-y-8 relative lg:space-y-0 md:mx-[20px] lg:mx-[100px]">
       <div class="">
-        
-        <ul class="lg:flex justify-center items-center my-[50px] gap-12 lg:text-xl font-semibold text-lg text-white">
-          <h3 class="lg:hidden underline pb-4">Quick links</h3>
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+        <img src="img/shutterstock_227066578_PPT.webp" class="lg:h-[400px] lg:w-[600px] h-[300px] w-full object-cover"
+          alt="">
       </div>
-      <div class="lg:flex justify-center items-center gap-12">
-        <h3 class="lg:hidden underline pb-4 text-white">Socials</h3>
-        <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='instagram-alt' color="white" size="30px"></box-icon>Instagram</p>
-        <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='facebook-square' color="white" size="30px"></box-icon>Facebook</p>
-        <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='whatsapp' color="white" size="30px"></box-icon>Whatsapp</p>
-        <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='twitter' color="white" size="30px"></box-icon>Twitter</p>
-        <p class="flex items-center pb-2 text-white"><box-icon type='solid' name='envelope' color="white" size="30px"></box-icon>info@voltexstore.com</p>
+      <div class="flex-1 space-y-8 bg-white relative lg:top-[140px] lg:shadow-md lg:p-10 p-6 lg:ml-[-130px]">
+        <h2 class="lg:text-4xl text-2xl font-semibold">Cutting-Edge Industrial Equipment</h2>
+        <p>Voltex store offers a wide range of cutting-edge industrial equipment, tailored to meet the diverse needs of
+          our customers. Our products are designed with the latest technology to ensure efficiency, reliability, and
+          performance. Whether you need equipment for manufacturing, automation, or any other industrial application, we
+          have the right solutions for you.</p>
+        <div>
+          <a href="#" class="bg-blue-950 text-white p-1 rounded-sm lg:text-xl lg:p-2">Learn More</a>
+        </div>
+
       </div>
-      <hr class="mt-[50px]">
-      <p class="text-white text-center p-2">Copyright @ 2024 Voltex Store </p>
-    </footer>
+    </div>
+
+  </section>
+
+  <!-- Mission -->
+
+  <section class="lg:mt-[130px] py-[50px] px-6 bg-gray-100 lg:h-[660px] h-[900px]">
+    <div class="lg:flex items-center space-y-8 relative lg:space-y-0 md:mx-[20px] lg:mx-[100px]">
+      <div class="flex-1 space-y-8 bg-gray-800 text-white lg:p-10 p-6 lg:shadow-md z-10">
+        <h2 class="lg:text-4xl text-2xl font-semibold">Our Mission</h2>
+        <p>We aim to be at the forefront of industrial technology, providing our customers with cutting-edge industrial
+          equipment and empowering them to explore and implement innovative automation technologies. Our commitment to
+          excellence and innovation drives everything we do, ensuring that we deliver the highest quality products and
+          services to our clients.</p>
+
+        <div>
+          <a href="#" class="bg-white text-blue-950 p-1 rounded-sm lg:text-xl lg:p-2">Learn More</a>
+        </div>
+
+      </div>
+      <div class="relative lg:top-[130px] lg:ml-[-110px]">
+        <img src="img/landing-brand-med.webp" class="lg:h-[400px] h-[300px] lg:w-[600px] w-full object-cover" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="pt-[50px] mb-0 pb-2 px-6 bg-blue-950">
+    <div class="lg:text-center space-y-6 text-white">
+      <H2 class="lg:text-6xl text-3xl font-semibold">Voltex Store</H2>
+      <p>Your Trusted Source for Quality cutting-edge Technologies</p>
+    </div>
+    <div class="">
+
+      <ul class="lg:flex justify-center items-center my-[50px] gap-12 lg:text-xl font-semibold text-lg text-white">
+        <h3 class="lg:hidden underline pb-4">Quick links</h3>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="lg:flex justify-center items-center gap-12">
+      <h3 class="lg:hidden underline pb-4 text-white">Socials</h3>
+      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='instagram-alt' color="white"
+          size="30px"></box-icon>Instagram</p>
+      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='facebook-square' color="white"
+          size="30px"></box-icon>Facebook</p>
+      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='whatsapp' color="white"
+          size="30px"></box-icon>Whatsapp</p>
+      <p class="flex items-center pb-2 text-white"><box-icon type='logo' name='twitter' color="white"
+          size="30px"></box-icon>Twitter</p>
+      <p class="flex items-center pb-2 text-white"><box-icon type='solid' name='envelope' color="white"
+          size="30px"></box-icon>info@voltexstore.com</p>
+    </div>
+    <hr class="mt-[50px]">
+    <p class="text-white text-center p-2">Copyright @ 2024 Voltex Store </p>
+  </footer>
+
 
 
   <script src="cart.js"></script>
   <script src="style.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
+
 </html>
