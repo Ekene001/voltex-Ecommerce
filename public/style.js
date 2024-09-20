@@ -9,7 +9,7 @@ const decreaseNum = () => {
   }
 };
 document.querySelector("#menu").addEventListener("click", () => {
-  document.querySelector("li, ul").classList.toggle("hidden");
+  document.querySelector("li, ul").classList.toggle("showmenu");
 });
 
 const AddtoCart = document.querySelectorAll(".add_to_cart");

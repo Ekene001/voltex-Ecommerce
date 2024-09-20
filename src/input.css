@@ -15,27 +15,38 @@
 .cart_item:nth-child(2n){
     margin: 2rem 0;
 }
-@media only screen and (max-width:768px) {
-    nav ul{
-        position: absolute;
-        top: 50px;
-        padding: 10px 0px 10px 50px;
-        left: -8%;
-        /* text-align: center; */
-        min-width: 96.5vw;
-        background-color: #f4f0ff;
+@media only screen and (max-width:920px) {
+    nav{
+        flex-direction: column;
+        position: relative;
     }
-
-}
-@media only screen and (max-width:860px) {
-    nav ul{
+    nav #menu{
+        display: block;
         position: absolute;
-        top: 50px;
-        padding: 10px 0px 10px 50px;
-        left: -8%;
-        /* text-align: center; */
-        min-width: 96.5vw;
-        background-color: #f4f0ff;
+        top: 0px;
+        right: 5px;
     }
+    nav ul{
+        background-color: rgb(255, 255, 255);
+        display: none;
+        
+        
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 0;
 
+    }
+    .showmenu{
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+    }
+    nav ul li a{
+        color: #222;
+    }
+    nav ul li:hover{
+        color: white;
+    }
+    
 }
